@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WD Compiler</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/3647f8ed7f.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="left">
+
+            <div class="head">
+                <h2>
+                    WebIDE
+                </h2>
+                <span id="project-counter">Project:0</span>
+                <button>
+                    <a href=""><i class="fa-brands fa-github"></i> Add ⭐ </a>
+                  </button>
+            </div>
+
+            <label><i class="fa-brands fa-html5"></i> HTML</label>
+            <textarea id="html-code" onkeyup="run()"></textarea>
+
+            <label><i class="fa-brands fa-css3-alt"></i> CSS</label>
+            <textarea id="css-code" onkeyup="run()"></textarea>
+
+            <label><i class="fa-brands fa-js"></i> JavaScript</label>
+            <textarea id="js-code" onkeyup="run()"></textarea>
+            <div class="btns">
+                <!-- <button onclick="load()">Undo Code</button> -->
+                <button onclick="save()">Downlaod Files</button>
+                <button onclick="clearCode()">Reset To Default</button>
+                <button onclick="newProject()">New Work</button>
+            </div>
+        </div>
+        <div class="right">
+
+            <label><i class="fa-solid fa-terminal"></i> Console</label>
+            <iframe id="output"></iframe>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+
+</html>
